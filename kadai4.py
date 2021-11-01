@@ -24,6 +24,6 @@ for list in response["Items"]:
     # print(list["Item"])
     tmp = str(list["Item"]["rank"]) + ": " + list["Item"]["itemName"] + "\r\n"
 
-    with open("output.txt", mode='a', encoding="utf8") as f:
+    with open("output.csv", mode='a', encoding="utf8") as f:
         f.write(tmp)
         f.close
