@@ -18,9 +18,9 @@ serch_params = {
 response = requests.get(RAKUTEN_PRODUCT_URL, serch_params)
 response = response.json()
 
-for list in response["Products"]:
-    print(list["Product"]["maxPrice"])
+for product_list in response["Products"]:
+    print(product_list["Product"]["maxPrice"])
 
-# for list in response["Items"]:
-#     # print(list)
-#     print(list["Item"]["itemPrice"])
+# for product_list in response["Items"]:
+#     # print(product_list)
+#     print(product_list["Item"]["itemPrice"])

@@ -19,7 +19,7 @@ serch_params = {
 response = requests.get(REQUEST_URL, serch_params)
 response = response.json()
 
-for list in response["Items"]:
-    # print(list)
-    print(list["Item"]["itemPrice"])
+for product_list in response["Items"]:
+    # print(product_list)
+    print(product_list["Item"]["itemPrice"])
 
